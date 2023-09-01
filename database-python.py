@@ -10,6 +10,6 @@ conn = psycopg2.connect(
 
 cursor = conn.cursor()
 
-cursor.execute("SELECT * FROM report_data")
+cursor.execute("SELECT * FROM birds")
 
-print(cursor.fetchone())
+print(cursor.fetchall())
